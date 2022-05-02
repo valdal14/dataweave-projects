@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="shopAvailableStock" type="ShopAvailableStock"/>
+  <xs:element name="shopAvailableStocks" type="ShopAvailableStocks"/>
+  <xs:element name="locationQuantities" type="locationQuantities"/>
+  <xs:element name="locationQuantity" type="locationQuantity"/>
+
+  <xs:complexType name="ShopAvailableStocks">
+    <xs:sequence>
+      <xs:element ref="shopAvailableStock" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ShopAvailableStock">
+    <xs:sequence>
+      <xs:element name="productIdentifier" type="xs:long"/>
+      <xs:element name="colourId" type="xs:int"/>
+      <xs:element name="computerSizeNumber" type="xs:string"/>
+      <xs:element name="availableQuantity" type="xs:int"/>
+      <xs:element name="totalQuantity" type="xs:int"/>
+      <xs:element name="maxLastUpdateDate" type="xs:date" minOccurs="0"/>
+      <xs:element name="eventReason" type="xs:string" minOccurs="0"/>
+      <xs:element name="eventTimestamp" type="xs:date" minOccurs="0"/>
+	  <xs:element ref="locationQuantities" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="locationQuantities">
+	<xs:sequence>
+		<xs:element ref="locationQuantity" minOccurs="0" maxOccurs="unbounded"/>
+	</xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="locationQuantity">
+	<xs:sequence>
+		<xs:element name="locationArvato" type="xs:string" minOccurs="0"/>
+		<xs:element name="locationCa" type="xs:string" minOccurs="0"/>
+		<xs:element name="availableLocationQuantity" type="xs:int" minOccurs="0"/>
+		<xs:element name="totalLocationQuantity" type="xs:int" minOccurs="0"/>
+		<xs:element name="locationMaxLastUpdateDate" type="xs:date" minOccurs="0"/>
+	</xs:sequence>
+  </xs:complexType>
+  
+</xs:schema>
