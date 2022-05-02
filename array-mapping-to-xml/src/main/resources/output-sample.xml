@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shopAvailableStocks>
+    <shopAvailableStock>
+        <productIdentifier>1</productIdentifier>
+        <colourId>1</colourId>
+        <computerSizeNumber>001</computerSizeNumber>
+        <availableQuantity>0</availableQuantity>
+        <totalQuantity>0</totalQuantity>
+        <maxLastUpdateDate>2012-12-13</maxLastUpdateDate>
+  		<eventReason>Quantity Adjustment</eventReason>
+  		<eventTimestamp>2018-12-13</eventTimestamp>
+		 <locationQuantities>
+		  <locationQuantity>
+			<locationArvato>1000</locationArvato>
+			<locationCa>801</locationCa>
+			<availableLocationQuantity>50</availableLocationQuantity>
+			<totalLocationQuantity>50</totalLocationQuantity>
+			<locationMaxLastUpdateDate>2022-04-22</locationMaxLastUpdateDate>
+		  </locationQuantity>
+		  <locationQuantity>
+			<locationArvato>1001</locationArvato>
+			<locationCa>805</locationCa>
+			<availableLocationQuantity>0</availableLocationQuantity>
+			<totalLocationQuantity>0</totalLocationQuantity>
+			<locationMaxLastUpdateDate>2022-04-22</locationMaxLastUpdateDate>
+		  </locationQuantity>
+		  <locationQuantity>
+			<locationArvato>1002</locationArvato>
+			<locationCa>803</locationCa>
+			<availableLocationQuantity>0</availableLocationQuantity>
+			<totalLocationQuantity>10</totalLocationQuantity>
+			<locationMaxLastUpdateDate>2022-04-22</locationMaxLastUpdateDate>
+		  </locationQuantity>
+		  <locationQuantity>
+			<locationArvato>1003</locationArvato>
+			<locationCa>804</locationCa>
+			<availableLocationQuantity>25</availableLocationQuantity>
+			<totalLocationQuantity>38</totalLocationQuantity>
+			<locationMaxLastUpdateDate>2022-04-22</locationMaxLastUpdateDate>
+		  </locationQuantity>
+		</locationQuantities>
+    </shopAvailableStock>
+</shopAvailableStocks>
